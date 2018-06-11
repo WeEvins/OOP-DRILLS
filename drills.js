@@ -13,7 +13,7 @@ greet(){
 let f1 = new Family('Adrien', 'France', 16);
 let f2 = new Family('Hiccup', 'Berk', 25);
 let f3 = new Family('Marina', 'Inkopolis', 23);
-let f4 = new Family('Sora', 'Destiny Island', 18);
+let f4 = new Family('Sora', 'the Destiny Islands', 18);
 let f5 = new Family('Garnet', 'Alexandria', 19);
 
 
@@ -34,10 +34,24 @@ f5.greet();
      }
  }
 
-//  class Car extends Vehicle{
-//      constructor(car){
-//          super 
-//      }
-//  }
+ class Car extends Vehicle{
+     constructor(make, model, price, transmission){
+         super (make, model, price)
+         this.transmission = transmission;
+
+     }
+ };
 
 
+class Bike extends Vehicle{
+    constructor(make, model, price,){
+    super (make, model, price)
+}
+};
+
+
+class Boat extends Vehicle {
+    constructor(make, model, price) {
+        super (make, model, price)
+    }
+};
